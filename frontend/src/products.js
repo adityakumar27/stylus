@@ -62,7 +62,7 @@ const products = [
     price: 49.99,
     countInStock: 7,
     rating: 3.5,
-    numReviews: 10,
+    numReviews: 8,
   },
   {
     _id: '6',
@@ -75,7 +75,7 @@ const products = [
     price: 29.99,
     countInStock: 0,
     rating: 4,
-    numReviews: 12,
+    numReviews: 2,
   },
 ]
 
