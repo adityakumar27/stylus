@@ -13,8 +13,8 @@ const App= () => {
      <Header />
      <main className='py-4'>
        <Container>
-         <Route path='/' compoent={HomeScreen} exact />
-         <Route path='/product/:id' compoent={ProductScreen}  />
+         <Route path='/' component={HomeScreen} exact />
+         <Route path='/product/:id' component={ProductScreen}  />
        </Container>
       </main>
      <Footer />
