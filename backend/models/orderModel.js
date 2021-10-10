@@ -4,7 +4,7 @@ const orderSchema = mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
-        ref: 'User'
+        ref: 'User',
     },
     orderItems: [
         {
@@ -16,7 +16,7 @@ const orderSchema = mongoose.Schema({
             {
                 type: mongoose.Schema.Types.ObjectId,
                 required: true,
-                ref: 'Product'
+                ref: 'Product',
             } 
         }
     ],
@@ -28,7 +28,7 @@ const orderSchema = mongoose.Schema({
     },
     paymentMethod: {
         type: String,
-        required: true
+        required: true,
     },
     paymentResult: {
         id: {type:String},
@@ -39,7 +39,7 @@ const orderSchema = mongoose.Schema({
     taxPrice: {
         type: Number,
         required: true,
-        default: 0.0
+        default: 0.0,
     },
     shippingPrice: {
         type: Number,
@@ -70,7 +70,7 @@ const orderSchema = mongoose.Schema({
         }
    
 }, {
-    timestamps: true
+    timestamps: true,
 })
 const Order = mongoose.model('Order',orderSchema)
 
